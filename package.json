@@ -1,0 +1,27 @@
+{
+  "name": "vite-express-monorepo",
+  "version": "1.0.0",
+  "description": "![Status](https://img.shields.io/badge/status-early--development-yellow)\r ![License](https://img.shields.io/badge/license-MIT-blue)",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n server,client -c auto \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williams21v/PrimerTime.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/williams21v/PrimerTime/issues"
+  },
+  "homepage": "https://github.com/williams21v/PrimerTime#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
